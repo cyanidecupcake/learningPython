@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-##Open in Terminal to play the game.
+##Open in Terminal to play this game of chance.
 
 import random
 import time
