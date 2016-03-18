@@ -1,3 +1,7 @@
+#!/usr/bin/python
+
+##Open in Terminal to play the game.
+
 import random
 import time
 
