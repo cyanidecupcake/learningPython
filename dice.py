@@ -18,7 +18,7 @@ def dice() :   ##Function
 
 
 	if player > ai : 
-		print("You Win")
+		print("You win... this round")
 	elif player == ai :
 		print("Much like in life, no one won this round")
 	else :
@@ -30,10 +30,13 @@ def dice() :   ##Function
 	print("")
 	print("Would you like to quit? Y/N") 
 	cont = raw_input()
-	if cont == "Y" :
+	if cont == "Y" or cont == "y" :
 		exit()
-	else :
+		
+	elif cont == "N" or cont == "n" : 
 		pass
+	else :
+		print("What do you want from me?!")
 	
 	
 while True :
