@@ -8,6 +8,7 @@ pygame.init() ##initalizes pygame
 
 clock = pygame.time.Clock() ##refreshes the screen
 fps = 15
+pygame.key.set_repeat(500, 30)
 
 ##create world
 canvas_width = 960
@@ -38,11 +39,17 @@ main = True
 while main == True:	
 	pygame.display.flip() ##redraws screen
 	clock.tick(fps)
+	
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			pygame.quit(); sys.exit();
+			
+			
 					
-		##Movement 
+		##Movement
+		
+		
+		 
 		if event.type == KEYDOWN:
 			if event.key == K_LEFT:
 				rx = rx-10
